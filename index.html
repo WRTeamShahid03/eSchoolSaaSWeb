@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>eSchool Web</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive .css" />
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body style="background-color: #F2F5F7">
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbarWrapper">
+        <div class="navLogoWrapper">
+          <div class="navLogo">
+            <a href="index.html">
+              <img src="./Images/Logo.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="menuListWrapper">
+          <ul class="listItems">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/about-us.html">About Us</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Gallery
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/photos.html">Photos</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="/videos.html">Videos</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#faqs">FAQs</a>
+            </li>
+            <li>
+              <a href="/contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="hamburg">
+            <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                class="fa-solid fa-bars"></i></span>
+          </div>
+        </div>
+        <div class="loginWrapper">
+          <button class="commonBtn">Login <i class="fa-regular fa-user"></i></button>
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <div class="navLogoWrapper">
+            <div class="navLogo">
+              <img src="./Images/Logo.svg" alt="" />
+            </div>
+          </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="listItems">
+            <li>
+              <a href="/index.html">Home</a>
+            </li>
+            <li>
+              <a href="/about-us.html">About Us</a>
+            </li>
+            <li>
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Gallery
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item" href="/photos.html">Photos</a>
+                  </li>
+                  <hr />
+                  <li>
+                    <a class="dropdown-item" href="/videos.html">Videos</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#faqs">FAQs</a>
+            </li>
+            <li>
+              <a href="/contact-us.html">Contact Us</a>
+            </li>
+            <div class="loginWrapper">
+              <button class="commonBtn">Login <i class="fa-regular fa-user"></i></button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- navbar ends here  -->
+
+  <div class="main">
+    <section class="heroSection">
+      <div class="owl-carousel owl-theme hero-carousel">
+        <div class="item">
+          <img src="./Images/heroImg1.jpg" alt="" class="swiperImage" />
+        </div>
+        <div class="item">
+          <img src="./Images/heroImg2.jpg" alt="" class="swiperImage" />
+        </div>
+        <div class="item">
+          <img src="./Images/heroImg3.jpg" alt="" class="swiperImage" />
+        </div>
+      </div>
+    </section>
+
+    <!-- heroSection ends here  -->
+
+    <section class="aboutUs commonWaveSect">
+
+      <div class="container">
+        <div class="row aboutWrapper">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="aboutImgWrapper">
+              <img src="./Images/about us image.png" alt="" />
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-6">
+            <div class="aboutContentWrapper">
+              <span class="commonTag"> About Us </span>
+              <span class="commonTitle">
+                Personalized Learning for
+                Every Student
+              </span>
+              <span class="commonDesc">
+                Briefly introduce your school, including its name, location, and level of
+                education (elementary, high school, etc.). Highlight your school's
+                mission statement. This concise statement captures the core purpose
+                and philosophy that guides everything you do.
+
+
+              </span>
+              <span class="commonDesc">
+                Go beyond the basics and showcase what makes your school unique.
+                Do you have a specific teaching approach, like project-based learning or
+                a focus on STEM fields?
+                Do you offer unique programs or extracurricular activities?
+                Do you have a strong focus on arts, athletics, or community service?
+                Highlight any awards or recognition your school has received.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- aboutUs ends here  -->
+
+    <section class="programs commonMT">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="flex_column_center">
+              <span class="commonTag"> Educational Programs </span>
+              <span class="commonTitle">
+                Educational Programs for every Stage
+              </span>
+
+              <span class="commonDesc">
+                Educational programs are tailored to cater to every stage of learning,
+                ensuring comprehensive development from early childhood to adulthood.
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12 programsCardWrapper">
+            <div class="commonSlider">
+
+              <div class="slider-content owl-carousel">
+                <!-- Example slide -->
+                <div class="swiperDataWrapper">
+                  <div class="card">
+                    <img src="./Images/programImg1.png" class="card-img-top" alt="..." />
+                    <div class="cardDetails">
+                      <span class="cardTitle">Pre-primary School</span>
+                      <span class="cardDesc">This Highlights the playful environment and focus</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiperDataWrapper">
+                  <div class="card">
+                    <img src="./Images/programImg2.png" class="card-img-top" alt="..." />
+                    <div class="cardDetails">
+                      <span class="cardTitle">Primary School</span>
+                      <span class="cardDesc">This Highlights the playful environment and focus</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiperDataWrapper">
+                  <div class="card">
+                    <img src="./Images/programImg3.png" class="card-img-top" alt="..." />
+                    <div class="cardDetails">
+                      <span class="cardTitle">Secondary School</span>
+                      <span class="cardDesc">This Highlights the playful environment and focus</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiperDataWrapper">
+                  <div class="card">
+                    <img src="./Images/programImg4.png" class="card-img-top" alt="..." />
+                    <div class="cardDetails">
+                      <span class="cardTitle">Higher Secondary School</span>
+                      <span class="cardDesc">This Highlights the playful environment and focus</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more swiperDataWrapper elements here -->
+              </div>
+              <!-- Navigation buttons -->
+              <div class="navigationBtns">
+                <button class="prev commonBtn">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="next commonBtn">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="sideImgs">
+              <img src="./Images/color.png" class="colorImg" alt="colorImg" />
+              <img src="./Images/bag.png" class="bagImg" alt="bagImg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- programs ends here  -->
+
+    <section class="events annaouncementSection commonMT commonWaveSect">
+      <div class="container">
+        <div class="row mainRow">
+
+          <div class="col-md-12 col-lg-6 imgDiv">
+            <img src="./Images/announcementImg.png" alt="announcementImg">
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-6 ">
+            <div class="upperDiv">
+
+              <div class="flex_column_center">
+                <span class="commonTag"> Announcement </span>
+                <span class="commonTitle">
+                  Important Update
+                </span>
+
+                <span class="commonDesc">
+                  Don't miss out on these upcoming events! Check the schedule
+                  and mark your calendars.
+                </span>
+              </div>
+              <!-- Navigation buttons -->
+              <div class="navigationBtns">
+                <button class="prev commonBtn">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="next commonBtn">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="eventsCardWrapper">
+              <div class="row">
+                <div class="col-12">
+
+                  <div class="commonSlider annaouncementSlider">
+
+                    <div class="slider-content owl-carousel announcementSwiper">
+                      <!-- Example slide -->
+                      <div class="swiperDataWrapper">
+                        <div class="announcementCardWrapper">
+                          <div class="card">
+                            <span class="rightArr"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="eventDateWrapper">
+                              <span class="date">17</span>
+                              <span class="date">April</span>
+                            </div>
+                            <div class="eventDescWrapper">
+                              <span class="eventTitle">Math Marvels Challenge</span>
+                              <span class="eventDesc">
+                                Hey Class 4 Superstars! 🚀
+                                Get ready for "Math Marvels Challenge" </span>
+                              <div class="classWrapper">
+                                <span class="eventDesc">2A English</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <span class="rightArr"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="eventDateWrapper">
+                              <span class="date">17</span>
+                              <span class="date">April</span>
+                            </div>
+                            <div class="eventDescWrapper">
+                              <span class="eventTitle">Math Marvels Challenge</span>
+                              <span class="eventDesc">
+                                Hey Class 4 Superstars! 🚀
+                                Get ready for "Math Marvels Challenge" </span>
+                              <div class="classWrapper">
+                                <span class="eventDesc">2A English</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiperDataWrapper">
+                        <div class="announcementCardWrapper">
+                          <div class="card">
+                            <span class="rightArr"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="eventDateWrapper">
+                              <span class="date">17</span>
+                              <span class="date">April</span>
+                            </div>
+                            <div class="eventDescWrapper">
+                              <span class="eventTitle">Math Marvels Challenge</span>
+                              <span class="eventDesc">
+                                Hey Class 4 Superstars! 🚀
+                                Get ready for "Math Marvels Challenge" </span>
+                              <div class="classWrapper">
+                                <span class="eventDesc">2A English</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <span class="rightArr"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="eventDateWrapper">
+                              <span class="date">17</span>
+                              <span class="date">April</span>
+                            </div>
+                            <div class="eventDescWrapper">
+                              <span class="eventTitle">Math Marvels Challenge</span>
+                              <span class="eventDesc">
+                                Hey Class 4 Superstars! 🚀
+                                Get ready for "Math Marvels Challenge" </span>
+                              <div class="classWrapper">
+                                <span class="eventDesc">2A English</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiperDataWrapper">
+                        <div class="announcementCardWrapper">
+                          <div class="card">
+                            <span class="rightArr"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="eventDateWrapper">
+                              <span class="date">17</span>
+                              <span class="date">April</span>
+                            </div>
+                            <div class="eventDescWrapper">
+                              <span class="eventTitle">Math Marvels Challenge</span>
+                              <span class="eventDesc">
+                                Hey Class 4 Superstars! 🚀
+                                Get ready for "Math Marvels Challenge" </span>
+                              <div class="classWrapper">
+                                <span class="eventDesc">2A English</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <span class="rightArr"><i class="fa-solid fa-chevron-right"></i></span>
+                            <div class="eventDateWrapper">
+                              <span class="date">17</span>
+                              <span class="date">April</span>
+                            </div>
+                            <div class="eventDescWrapper">
+                              <span class="eventTitle">Math Marvels Challenge</span>
+                              <span class="eventDesc">
+                                Hey Class 4 Superstars! 🚀
+                                Get ready for "Math Marvels Challenge" </span>
+                              <div class="classWrapper">
+                                <span class="eventDesc">2A English</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Add more swiperDataWrapper elements here -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- events ends here  -->
+
+    <section class="programs ctcaSection commonMT">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="flex_column_center">
+              <span class="commonTag"> CTCA-Contes </span>
+              <span class="commonTitle">
+                Educational Programs for every Stage
+              </span>
+
+              <span class="commonDesc">
+                Educational programs are tailored to cater to every stage of learning,
+                ensuring comprehensive development from early childhood to adulthood.
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12 programsCardWrapper">
+            <div class="row">
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="card">
+                  <img src="./Images/ctcaImg.png" class="card-img-top" alt="..." />
+                  <div class="cardDetails">
+                    <span class="cardTitle">Total Teacher</span>
+                    <span class="cardDesc">40</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="card">
+                  <img src="./Images/ctcaImg.png" class="card-img-top" alt="..." />
+                  <div class="cardDetails">
+                    <span class="cardTitle">Total Student</span>
+                    <span class="cardDesc">256</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="card">
+                  <img src="./Images/ctcaImg.png" class="card-img-top" alt="..." />
+                  <div class="cardDetails">
+                    <span class="cardTitle">Total Class</span>
+                    <span class="cardDesc">30</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="card">
+                  <img src="./Images/ctcaImg.png" class="card-img-top" alt="..." />
+                  <div class="cardDetails">
+                    <span class="cardTitle">Total Steams</span>
+                    <span class="cardDesc">10</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sideImgs">
+              <img src="./Images/pen.png" class="colorImg" alt="colorImg" />
+              <img src="./Images/triangle.png" class="bagImg" alt="bagImg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ourTeacher commonMT commonWaveSect">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="flex_column_center">
+              <span class="commonTag"> Our Expert Teacher </span>
+              <span class="commonTitle">
+                More Than Just Teachers, They're Mentors
+              </span>
+
+              <span class="commonDesc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="commonSlider">
+              <div class="slider-container">
+                <div class="slider-content owl-carousel">
+                  <!-- Example slide -->
+                  <div class="swiperDataWrapper">
+                    <div class="card">
+                      <div>
+                        <img src="./Images/teacher1.png" alt="">
+                      </div>
+                      <div class="teacherDetails">
+                        <span class="name">Esther Howard</span>
+                        <span class="subject">English</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div class="card">
+                      <div>
+                        <img src="./Images/teacher2.png" alt="">
+                      </div>
+                      <div class="teacherDetails">
+                        <span class="name">Jerome Bell</span>
+                        <span class="subject">English</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div class="card">
+                      <div>
+                        <img src="./Images/teacher3.png" alt="">
+                      </div>
+                      <div class="teacherDetails">
+                        <span class="name">Eleanor Pena</span>
+                        <span class="subject">English</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div class="card">
+                      <div>
+                        <img src="./Images/teacher4.png" alt="">
+                      </div>
+                      <div class="teacherDetails">
+                        <span class="name">Leslie Alexander</span>
+                        <span class="subject">English</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div class="card">
+                      <div>
+                        <img src="./Images/teacher1.png" alt="">
+                      </div>
+                      <div class="teacherDetails">
+                        <span class="name">Esther Howard</span>
+                        <span class="subject">English</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiperDataWrapper">
+                    <div class="card">
+                      <div>
+                        <img src="./Images/teacher2.png" alt="">
+                      </div>
+                      <div class="teacherDetails">
+                        <span class="name">Esther Howard</span>
+                        <span class="subject">English</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Add more swiperDataWrapper elements here -->
+                </div>
+                <!-- Navigation buttons -->
+                <div class="navigationBtns">
+                  <button class="prev commonBtn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                  </button>
+                  <button class="next commonBtn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ourTeacher ends here  -->
+
+    <section class="faqs commonMT" id="faqs">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="flex_column_center">
+              <span class="commonTag"> Frequently Asked Questions </span>
+              <span class="commonTitle">
+                Know More About eSchool
+              </span>
+
+              <span class="commonDesc">
+                We've got answers! Explore our comprehensive collection of frequently asked
+                questions to find solutions to common queries.
+              </span>
+            </div>
+          </div>
+
+          <div class="col-12 lowerDiv">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <span> 1. What are the admission requirements? </span>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                      tristique varius. Sit lacus vitae augue nisl. Sed
+                      condimentum feugiat id ac ac orci massa consectetur
+                      urna.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <span>
+                      2. What financial aid or scholarship options are
+                      available to students?
+                    </span>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                      tristique varius. Sit lacus vitae augue nisl. Sed
+                      condimentum feugiat id ac ac orci massa consectetur
+                      urna.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <span>
+                      3. What kind of curriculum does School Name offer?
+                    </span>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                      tristique varius. Sit lacus vitae augue nisl. Sed
+                      condimentum feugiat id ac ac orci massa consectetur
+                      urna.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <span>
+                      4. What extracurricular activities are available?
+                    </span>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                      tristique varius. Sit lacus vitae augue nisl. Sed
+                      condimentum feugiat id ac ac orci massa consectetur
+                      urna.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <span> 5. Does School offer financial aid? </span>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span>Lorem ipsum dolor sit amet consectetur. Diam diam cras
+                      tristique varius. Sit lacus vitae augue nisl. Sed
+                      condimentum feugiat id ac ac orci massa consectetur
+                      urna.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sideImgs">
+              <img src="./Images/ques2.png" class="colorImg" alt="colorImg" />
+              <img src="./Images/ques1.png" class="bagImg" alt="bagImg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faqs ends here  -->
+
+    <section class="ourGalleryPhotos commonMT commonWaveSect">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="flex_column_center">
+              <span class="commonTag"> Our Photo Gallery</span>
+              <span class="commonTitle">
+                Tiny Scholars Showcase
+              </span>
+
+              <span class="commonDesc">
+                We are group of teachers who really love children's and enjoy
+                every moment of teaching
+              </span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row galleryImgsContainer">
+              <div class="col-md-6 col-lg-6 leftImgs">
+                <div class="bigImg">
+                  <img src="./Images/leftBigImg.png" alt="">
+                  <div class="detailsCard">
+                    <a href="/">
+                      <img src="./Images/bx-plus-circle.png" alt="">
+                    </a>
+                    <span>Annual Function 2023</span>
+                  </div>
+                </div>
+                <div class="smallImgs">
+                  <div class="leftSmallImg1">
+                    <img src="./Images/leftSmallImg1.png" alt="">
+                    <div class="detailsCard">
+                      <a href="/">
+                        <img src="./Images/bx-plus-circle.png" alt="">
+                      </a>
+                      <span>Annual Function 2023</span>
+                    </div>
+                  </div>
+                  <div class="leftSmallImg2">
+                    <img src="./Images/leftSmallImg2.png" alt="">
+                    <div class="detailsCard">
+                      <a href="/">
+                        <img src="./Images/bx-plus-circle.png" alt="">
+                      </a>
+                      <span>Annual Function 2023</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 rightImgs">
+                <div class="upperImgs">
+                  <div class="upperImg1">
+
+                    <img src="./Images/upperImg1.png" alt="">
+
+                    <div class="detailsCard">
+                      <a href="/">
+                        <img src="./Images/bx-plus-circle.png" alt="">
+                      </a>
+                      <span>Annual Function 2023</span>
+                    </div>
+
+                  </div>
+                  <div class="lowerImg1">
+
+                    <img src="./Images/lowerImg1.png" alt="">
+
+                    <div class="detailsCard">
+                      <a href="/">
+                        <img src="./Images/bx-plus-circle.png" alt="">
+                      </a>
+                      <span>Annual Function 2023</span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="lowerImgs">
+                  <div class="upperImg2">
+
+                    <img src="./Images/upperImg2.png" alt="">
+
+                    <div class="detailsCard">
+                      <a href="/">
+                        <img src="./Images/bx-plus-circle.png" alt="">
+                      </a>
+                      <span>Annual Function 2023</span>
+                    </div>
+
+                  </div>
+                  <div class="lowerImg2">
+
+                    <img src="./Images/lowerImg2.png" alt="">
+
+                    <div class="detailsCard">
+                      <a href="/">
+                        <img src="./Images/bx-plus-circle.png" alt="">
+                      </a>
+                      <span>Annual Function 2023</span>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ourGalleryPhotos ends here  -->
+  </div>
+
+  <footer class="">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 infoContainer">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 infoDivWrapper">
+              <div class="iconDiv">
+                <span class="iconWrapper"><i class="fa-solid fa-location-dot"></i></span>
+              </div>
+              <div class="textDiv">
+                <span>School Address</span>
+                <span>55356 Larson Mountain, Thresaville, NV 45331-7457</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 infoDivWrapper">
+              <div class="iconDiv">
+                <span class="iconWrapper"><i class="fa-solid fa-envelope-circle-check"></i></span>
+              </div>
+              <div class="textDiv">
+                <span>Mail Us</span>
+                <span>eSchoolsass@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 infoDivWrapper">
+              <div class="iconDiv">
+                <span class="iconWrapper"><i class="fa-solid fa-phone-volume"></i></i></span>
+              </div>
+              <div class="textDiv">
+                <span>Call Us</span>
+                <span>+91 1234567890</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="companyInfoWrapper">
+            <div>
+              <a href="index.html">
+                <img src="./Images/footerLogo.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <span class="commonDesc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna.
+              </span>
+            </div>
+
+            <div class="socialIcons">
+              <span>
+                <a href="https://www.facebook.com/wrteam.in" target="_blank">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </span>
+              <span>
+                <a href="https://www.instagram.com/wrteam.in" target="_blank">
+                  <i class="fa-brands fa-square-instagram"></i>
+                </a>
+              </span>
+              <span>
+                <a href="https://www.linkedin.com/company/wrteam" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </span>
+              <span>
+                <a href="https://twitter.com/wrteamin" target="_blank">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="linksWrapper usefulLinksDiv">
+            <span class="title">Useful Links</span>
+            <span><a href="/index.html">Home</a></span>
+            <span><a href="/about-us.html">About Us</a></span>
+            <span><a href="/photos.html">Photos</a></span>
+            <span><a href="/videos.html">Videos</a></span>
+            <span><a href="/contact-us.html">Contact Us</a></span>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-2">
+          <div class="linksWrapper">
+            <span class="title">Quick Links</span>
+            <span>
+              <a href=""> Admin Login </a>
+            </span>
+            <span>
+              <a href=""> Terms & Conditioins </a>
+            </span>
+            <span>
+              <a href=""> Privacy Policy </a>
+            </span>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="linksWrapper">
+            <span class="title">Download eSchool Saas Apps</span>
+
+            <div class="appContainer">
+              <a class="appWrapper" href="/">
+                <img src="./Images/PlayStore.png" alt="">
+                <span class="appNameWrapper">
+                  <span>Student & Parent</span>
+                  <span>Android App</span>
+                </span>
+              </a>
+
+              <a class="appWrapper" href="/">
+                <img src="./Images/AppStore.png" alt="">
+                <span class="appNameWrapper">
+                  <span>Student & Parent</span>
+                  <span>iOS App</span>
+                </span>
+              </a>
+            </div>
+
+            <div class="appContainer mt-4">
+              <a class="appWrapper" href="/">
+                <img src="./Images/AppStore.png" alt="">
+                <span class="appNameWrapper">
+                  <span>Staff & Teacher</span>
+                  <span>iOS App</span>
+                </span>
+              </a>
+
+              <a class="appWrapper" href="/">
+                <img src="./Images/PlayStore.png" alt="">
+                <span class="appNameWrapper">
+                  <span>Staff & Teacher</span>
+                  <span>Android App</span>
+                </span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyRightText">
+      <span>© 2024 © WRTeam. All Rights Reserved</span>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+
+
+    // annaouncementSlider
+    $(document).ready(function () {
+      // Initialize each carousel separately
+      $(".announcementSwiper").each(function () {
+        var owl = $(this).owlCarousel({
+          loop: false,
+          margin: 10,
+          nav: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1.5,
+            },
+            1000: {
+              items: 1.5,
+            },
+          },
+        });
+
+        // Custom navigation buttons for this specific carousel
+        $(this)
+          .closest(".annaouncementSliderBtns")
+          .find(".prev")
+          .click(function () {
+            owl.trigger("prev.owl.carousel");
+          });
+
+        $(this)
+          .closest(".annaouncementSliderBtns")
+          .find(".next")
+          .click(function () {
+            owl.trigger("next.owl.carousel");
+          });
+      });
+    });
+
+    // hero-slider
+    $(document).ready(function () {
+      $(".hero-carousel").owlCarousel({
+        items: 1,
+        loop: false,
+        autoplay: true,
+        autoplayTimeout: 2000, // Set autoplay interval in milliseconds
+        autoplayHoverPause: true, // Pause autoplay when mouse hovers over the carousel
+        nav: true,
+        navText: [
+          "<i class='fa-solid fa-arrow-left'></i>",
+          "<i class='fa-solid fa-arrow-right'></i>",
+        ],
+      });
+    });
+
+    // commonSlider
+    $(document).ready(function () {
+      // Initialize each carousel separately
+      $(".slider-content.owl-carousel").each(function () {
+        var owl = $(this).owlCarousel({
+          loop: false,
+          margin: 10,
+          nav: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            576: {
+              items: 2,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+
+        // Custom navigation buttons for this specific carousel
+        $(this)
+          .closest(".commonSlider")
+          .find(".prev")
+          .click(function () {
+            owl.trigger("prev.owl.carousel");
+          });
+
+        $(this)
+          .closest(".commonSlider")
+          .find(".next")
+          .click(function () {
+            owl.trigger("next.owl.carousel");
+          });
+      });
+    });
+
+  </script>
+
+  <!-- bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- fontawesome icons   -->
+  <script src="https://kit.fontawesome.com/1d2a297b20.js" crossorigin="anonymous"></script>
+
+  <!-- swiper  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <!-- swiper  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>

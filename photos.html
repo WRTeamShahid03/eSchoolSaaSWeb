@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive .css">
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+    <body style="background-color: #F2F5F7">
+
+    <header class="navbar">
+        <div class="container">
+            <div class="navbarWrapper">
+                <div class="navLogoWrapper">
+                    <div class="navLogo">
+                        <a href="index.html">
+                            <img src="./Images/Logo.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="menuListWrapper">
+                    <ul class="listItems">
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="/photos.html">Photos</a>
+                                    </li>
+                                    <hr />
+                                    <li>
+                                        <a class="dropdown-item" href="/videos.html">Videos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/contact-us.html">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="hamburg">
+                        <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </div>
+                <div class="loginWrapper">
+                    <button class="commonBtn">Login <i class="fa-regular fa-user"></i></button>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <div class="navLogoWrapper">
+                        <div class="navLogo">
+                            <img src="./Images/Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="listItems">
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="/photos.html">Photos</a>
+                                    </li>
+                                    <hr />
+                                    <li>
+                                        <a class="dropdown-item" href="/videos.html">Videos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/contact-us.html">Faqs</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us.html">Contact Us</a>
+                        </li>
+                        <div class="loginWrapper">
+                            <button class="commonBtn">Login <i class="fa-regular fa-user"></i></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- navbar ends here  -->
+
+    <div class="main">
+
+        <div class="breadcrumb">
+            <div class="container">
+                <div class="contentWrapper">
+                    <span class="title">
+                        Gallery
+                    </span>
+                    <span>
+                        <a href="/" class="home">Home</a>
+                        <span><i class="fa-solid fa-caret-right"></i></span>
+                        <span class="home">Gallery</span>
+                        <span><i class="fa-solid fa-caret-right"></i></span>
+                        <span class="page">Photos</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <section class="photosGallery commonMT commonWaveSect">
+            <div class="container">
+                <div class="photosGalleryContainer">
+                    <div class="upperDiv imgsContainer">
+                        <div class="upperBigImg1">
+                            <img src="./Images/photosUpperBigImg1.png" alt="GalleryImgs">
+                            <div class="detailArr">
+                                <a href="">
+                                    <img src="./Images/photosArrIcon.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="upperBigImg2">
+                            <img src="./Images/photosUpperBigImg2.png" alt="GalleryImgs">
+                            <div class="detailArr">
+                                <a href="">
+                                    <img src="./Images/photosArrIcon.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="smallImgContainer">
+                            <div class="upperSmallImg1">
+                                <img src="./Images/photosUpperSmallImg1.png" alt="GalleryImgs">
+                                <div class="detailArr">
+                                    <a href="">
+                                        <img src="./Images/photosArrIcon.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="upperSmallImg2">
+                                <img src="./Images/photosUpperSmallImg2.png" alt="GalleryImgs">
+                                <div class="detailArr">
+                                    <a href="">
+                                        <img src="./Images/photosArrIcon.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lowerDiv imgsContainer">
+                        <div class="lowerBigImg1">
+                            <img src="./Images/photosLowerBigImg1.png" alt="GalleryImgs">
+                            <div class="detailArr">
+                                <a href="">
+                                    <img src="./Images/photosArrIcon.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lowerBigImg2">
+                            <img src="./Images/photosLowerBigImg2.png" alt="GalleryImgs">
+                            <div class="detailArr">
+                                <a href="">
+                                    <img src="./Images/photosArrIcon.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="smallImgContainer">
+                            <div class="lowerSmallImg1">
+                                <img src="./Images/photosLowerSmallImg1.png" alt="GalleryImgs">
+                                <div class="detailArr">
+                                    <a href="">
+                                        <img src="./Images/photosArrIcon.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="lowerSmallImg2">
+                                <img src="./Images/photosLowerSmallImg2.png" alt="GalleryImgs">
+                                <div class="detailArr">
+                                    <a href="">
+                                        <img src="./Images/photosArrIcon.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="loadmoreBtnWrapper">
+                    <button class="commonBtn">Load More</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 infoContainer">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 infoDivWrapper">
+                            <div class="iconDiv">
+                                <span class="iconWrapper"><i class="fa-solid fa-location-dot"></i></span>
+                            </div>
+                            <div class="textDiv">
+                                <span>School Address</span>
+                                <span>55356 Larson Mountain, Thresaville, NV 45331-7457</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 infoDivWrapper">
+                            <div class="iconDiv">
+                                <span class="iconWrapper"><i class="fa-solid fa-envelope-circle-check"></i></span>
+                            </div>
+                            <div class="textDiv">
+                                <span>Mail Us</span>
+                                <span>eSchoolsass@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 infoDivWrapper">
+                            <div class="iconDiv">
+                                <span class="iconWrapper"><i class="fa-solid fa-phone-volume"></i></i></span>
+                            </div>
+                            <div class="textDiv">
+                                <span>Call Us</span>
+                                <span>+91 1234567890</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="companyInfoWrapper">
+                        <div>
+                            <a href="index.html">
+                                <img src="./Images/footerLogo.png" alt="" />
+                            </a>
+                        </div>
+                        <div>
+                            <span class="commonDesc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna.
+                            </span>
+                        </div>
+
+                        <div class="socialIcons">
+                            <span>
+                                <a href="https://www.facebook.com/wrteam.in" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.instagram.com/wrteam.in" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.linkedin.com/company/wrteam" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://twitter.com/wrteamin" target="_blank">
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="linksWrapper usefulLinksDiv">
+                        <span class="title">Useful Links</span>
+                        <span><a href="/index.html">Home</a></span>
+                        <span><a href="/about-us.html">About Us</a></span>
+                        <span><a href="/photos.html">Photos</a></span>
+                        <span><a href="/videos.html">Videos</a></span>
+                        <span><a href="/contact-us.html">Contact Us</a></span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-2">
+                    <div class="linksWrapper">
+                        <span class="title">Quick Links</span>
+                        <span>
+                            <a href=""> Admin Login </a>
+                        </span>
+                        <span>
+                            <a href=""> Terms & Conditioins </a>
+                        </span>
+                        <span>
+                            <a href=""> Privacy Policy </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="linksWrapper">
+                        <span class="title">Download eSchool Saas Apps</span>
+
+                        <div class="appContainer">
+                            <a class="appWrapper" href="/">
+                                <img src="./Images/PlayStore.png" alt="">
+                                <span class="appNameWrapper">
+                                    <span>Student & Parent</span>
+                                    <span>Android App</span>
+                                </span>
+                            </a>
+
+                            <a class="appWrapper" href="/">
+                                <img src="./Images/AppStore.png" alt="">
+                                <span class="appNameWrapper">
+                                    <span>Student & Parent</span>
+                                    <span>iOS App</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="appContainer mt-4">
+                            <a class="appWrapper" href="/">
+                                <img src="./Images/AppStore.png" alt="">
+                                <span class="appNameWrapper">
+                                    <span>Staff & Teacher</span>
+                                    <span>iOS App</span>
+                                </span>
+                            </a>
+
+                            <a class="appWrapper" href="/">
+                                <img src="./Images/PlayStore.png" alt="">
+                                <span class="appNameWrapper">
+                                    <span>Staff & Teacher</span>
+                                    <span>Android App</span>
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRightText">
+            <span>© 2024 © WRTeam. All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <!-- bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawesome icons   -->
+    <script src="https://kit.fontawesome.com/1d2a297b20.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
