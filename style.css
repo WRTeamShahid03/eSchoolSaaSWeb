@@ -918,85 +918,6 @@ a {
 
 /* faqs ends here  */
 
-.ourApp .flex_column_center {
-  padding: 0px 300px;
-}
-
-.ourApp .wrapper {
-  margin-top: 80px;
-}
-
-@media screen and (max-width: 991px) {
-  .ourApp .wrapper {
-    margin-top: 20px;
-  }
-}
-
-.ourApp .card {
-  background-color: var(--primary-color);
-  border-radius: 16px;
-  padding: 24px;
-  gap: 16px;
-  margin: 12px 0px;
-  position: relative;
-  overflow: hidden;
-}
-
-.ourApp .card:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  background: var(--primary-hover-color);
-  border-radius: 16px;
-  /* opacity: 0.8; */
-  transition: all 0.3s ease-out;
-}
-
-.ourApp .card:hover:before {
-  height: 100%;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .ourApp .card {
-    padding: 12px 8px;
-  }
-}
-
-.ourApp span {
-  position: relative;
-  z-index: 1;
-}
-
-.ourApp .card img {
-  width: 60px;
-}
-
-.ourApp .appName {
-  color: var(--text-white-color);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.ourApp .demoBtn {
-  font-weight: 500;
-  border: 1px solid #ffff;
-  color: var(--text-white-color);
-  padding: 6px 12px;
-  border-radius: 4px;
-  width: 160px;
-  cursor: pointer;
-}
-
-.ourApp .demoBtn i {
-  margin-left: 4px;
-}
-
-/* ourApp ends here  */
-
 footer {
   background: #29363F;
   padding-top: 180px;
@@ -1780,18 +1701,6 @@ body.modal-open {
 .ourGalleryPhotos .lowerImg1,
 .ourGalleryPhotos .lowerImg2 {
   position: relative;
-  transition: all 0.3s ease-out;
-}
-
-.ourGalleryPhotos .leftImgs .bigImg:hover .detailsCard,
-.ourGalleryPhotos .leftImgs .leftSmallImg1:hover .detailsCard,
-.ourGalleryPhotos .leftImgs .leftSmallImg2:hover .detailsCard,
-.ourGalleryPhotos .upperImg1:hover .detailsCard,
-.ourGalleryPhotos .upperImg2:hover .detailsCard,
-.ourGalleryPhotos .lowerImg1:hover .detailsCard,
-.ourGalleryPhotos .lowerImg2:hover .detailsCard {
-  visibility: visible;
-  transition: all 0.3s ease-out;
 }
 
 .ourGalleryPhotos .detailsCard {
@@ -1811,13 +1720,20 @@ body.modal-open {
   border-radius: 12px;
   margin: auto;
   z-index: 1;
-  transition: all 0.3s ease-out;
   visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s;
+  opacity: 0;
 }
 
-.ourGalleryPhotos .detailsCard span {
-  color: #fff;
-  font-weight: 500;
+.ourGalleryPhotos .leftImgs .bigImg:hover .detailsCard,
+.ourGalleryPhotos .leftImgs .leftSmallImg1:hover .detailsCard,
+.ourGalleryPhotos .leftImgs .leftSmallImg2:hover .detailsCard,
+.ourGalleryPhotos .upperImg1:hover .detailsCard,
+.ourGalleryPhotos .upperImg2:hover .detailsCard,
+.ourGalleryPhotos .lowerImg1:hover .detailsCard,
+.ourGalleryPhotos .lowerImg2:hover .detailsCard {
+  visibility: visible;
+  opacity: 1;
 }
 
 .ourGalleryPhotos .detailsCard::after {
@@ -1834,7 +1750,14 @@ body.modal-open {
   border-radius: 12px;
   margin: auto;
   z-index: -1;
+  transition: opacity 0.3s;
 }
+
+.ourGalleryPhotos .detailsCard span {
+  color: #fff;
+  font-weight: 500;
+}
+
 
 .ourGalleryPhotos .detailsCard a {
   background-color: white;
@@ -1958,7 +1881,7 @@ section {
   width: 100%;
   height: 85px;
   z-index: 1;
-  background: url('./Images/waveUp.png');
+  background: url('./Images/waveUp.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1966,12 +1889,12 @@ section {
 .commonWaveSect::after {
   content: '';
   position: absolute;
-  bottom: -116px;
+  bottom: -108px;
   left: 0px;
   width: 100%;
   height: 116px;
   z-index: 1;
-  background: url('./Images/waveDown.png');
+  background: url('./Images/waveDown.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2077,8 +2000,9 @@ section {
   border-radius: 12px;
   margin: auto;
   z-index: 1;
-  transition: all 0.3s ease-out;
   visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s;
+  opacity: 0;
 }
 
 .photosGallery .detailArr::after {
@@ -2088,19 +2012,16 @@ section {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   background-color: black;
   opacity: 0.7;
   border-radius: 12px;
   margin: auto;
   z-index: -1;
+  transition: opacity 0.3s;
 }
 
-.photosGallery .detailArr img {
-  width: 30px;
-  height: 30px;
-}
 
 .photosGallery .upperBigImg1,
 .photosGallery .upperBigImg2,
@@ -2123,7 +2044,12 @@ section {
 .photosGallery .lowerSmallImg1:hover .detailArr,
 .photosGallery .lowerSmallImg2:hover .detailArr {
   visibility: visible;
-  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.photosGallery .detailArr img {
+  width: 30px;
+  height: 30px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -2163,7 +2089,6 @@ section {
   border-radius: 8px;
 }
 
-
 .videosGallery .detailArr {
   display: flex;
   flex-direction: column;
@@ -2181,8 +2106,9 @@ section {
   border-radius: 12px;
   margin: auto;
   z-index: 1;
-  transition: all 0.3s ease-out;
   visibility: hidden;
+  transition: visibility 0.3s, opacity 0.3s;
+  opacity: 0;
 }
 
 .videosGallery .detailArr::after {
@@ -2192,13 +2118,14 @@ section {
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   background-color: black;
   opacity: 0.7;
   border-radius: 12px;
   margin: auto;
   z-index: -1;
+  transition: opacity 0.3s;
 }
 
 .videosGallery .detailArr img {
@@ -2220,7 +2147,7 @@ section {
 .videosGallery .video7:hover .detailArr,
 .videosGallery .video8:hover .detailArr {
   visibility: visible;
-  transition: all 0.3s ease-out;
+  opacity: 1;
 }
 
 @media screen and (max-width: 575px) {
@@ -2234,7 +2161,8 @@ section {
     width: 30px;
     height: 30px;
   }
-  .loadmoreBtnWrapper{
+
+  .loadmoreBtnWrapper {
     margin-top: 30px;
   }
 }
