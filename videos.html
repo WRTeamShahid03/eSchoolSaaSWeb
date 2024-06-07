@@ -52,9 +52,6 @@
                             </div>
                         </li>
                         <li>
-                            <a href="/contact-us.html">FAQs</a>
-                        </li>
-                        <li>
                             <a href="/contact-us.html">Contact Us</a>
                         </li>
                     </ul>
@@ -104,9 +101,6 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
-                        <li>
-                            <a href="/contact-us.html">Faqs</a>
                         </li>
                         <li>
                             <a href="/contact-us.html">Contact Us</a>
@@ -387,6 +381,19 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header.navbar');
+            const navbar = document.querySelector('.navbarWrapper');
+            if (window.scrollY > 0) {
+                header.classList.add('stickyNav');
+                navbar.classList.add('stickyNavActive');
+            } else {
+                header.classList.remove('stickyNav');
+                navbar.classList.remove('stickyNavActive');
+            }
+        });
+    </script>
     <!-- fontawesome icons   -->
     <script src="https://kit.fontawesome.com/1d2a297b20.js" crossorigin="anonymous"></script>
 

@@ -25,7 +25,7 @@
         <div class="navLogoWrapper">
           <div class="navLogo">
             <a href="index.html">
-              <img src="./Images/Logo.png" alt="" class="companyLogo"/>
+              <img src="./Images/Logo.png" alt="" class="companyLogo" />
             </a>
           </div>
         </div>
@@ -207,7 +207,7 @@
                 <div class="swiperDataWrapper">
                   <div class="card">
                     <div class="imgDiv">
-                      <img src="./Images/programImg1.png" class="card-img-top" alt="..." />
+                      <img src="./Images/programImg1.jpg" class="card-img-top" alt="..." />
                     </div>
                     <div class="cardDetails">
                       <span class="cardTitle">Pre-primary School</span>
@@ -218,7 +218,7 @@
                 <div class="swiperDataWrapper">
                   <div class="card">
                     <div class="imgDiv">
-                      <img src="./Images/programImg2.png" class="card-img-top" alt="..." />
+                      <img src="./Images/programImg2.jpg" class="card-img-top" alt="..." />
                     </div>
                     <div class="cardDetails">
                       <span class="cardTitle">Primary School</span>
@@ -229,7 +229,7 @@
                 <div class="swiperDataWrapper">
                   <div class="card">
                     <div class="imgDiv">
-                      <img src="./Images/programImg3.png" class="card-img-top" alt="..." />
+                      <img src="./Images/programImg3.jpg" class="card-img-top" alt="..." />
                     </div>
                     <div class="cardDetails">
                       <span class="cardTitle">Secondary School</span>
@@ -240,7 +240,7 @@
                 <div class="swiperDataWrapper">
                   <div class="card">
                     <div class="imgDiv">
-                      <img src="./Images/programImg4.png" class="card-img-top" alt="..." />
+                      <img src="./Images/programImg4.jpg" class="card-img-top" alt="..." />
                     </div>
                     <div class="cardDetails">
                       <span class="cardTitle">Higher Secondary School</span>
@@ -492,19 +492,19 @@
                   </div>
                 </div>
               </div>
-                <div class="col-6 col-md-6 col-lg-3 ">
-                  <div class="cardBg diffColorBg">
-                    <div class="card">
-                      <div class="imgBg">
-                        <img src="./Images/imgggg.jpg" alt="">
-                      </div>
-                      <div class="cardDetails">
-                        <span class="cardTitle">Total Steams</span>
-                        <span class="cardDesc">10</span>
-                      </div>
+              <div class="col-6 col-md-6 col-lg-3 ">
+                <div class="cardBg diffColorBg">
+                  <div class="card">
+                    <div class="imgBg">
+                      <img src="./Images/imgggg.jpg" alt="">
+                    </div>
+                    <div class="cardDetails">
+                      <span class="cardTitle">Total Steams</span>
+                      <span class="cardDesc">10</span>
                     </div>
                   </div>
                 </div>
+              </div>
             </div>
             <div class="sideImgs">
               <img src="./Images/pen.png" class="colorImg" alt="colorImg" />
@@ -1014,17 +1014,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
 
-window.addEventListener('scroll', function () {
-    const header = document.querySelector('header.navbar');
-    const navbar = document.querySelector('.navbarWrapper');
-    if (window.scrollY > 0) {
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header.navbar');
+      const navbar = document.querySelector('.navbarWrapper');
+      if (window.scrollY > 0) {
         header.classList.add('stickyNav');
         navbar.classList.add('stickyNavActive');
-    } else {
+      } else {
         header.classList.remove('stickyNav');
         navbar.classList.remove('stickyNavActive');
-    }
-});
+      }
+    });
 
 
     // annaouncementSlider
@@ -1050,14 +1050,14 @@ window.addEventListener('scroll', function () {
 
         // Custom navigation buttons for this specific carousel
         $(this)
-          .closest(".annaouncementSliderBtns")
+          .closest(".annaouncementSection")
           .find(".prev")
           .click(function () {
             owl.trigger("prev.owl.carousel");
           });
 
         $(this)
-          .closest(".annaouncementSliderBtns")
+          .closest(".annaouncementSection")
           .find(".next")
           .click(function () {
             owl.trigger("next.owl.carousel");
