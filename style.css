@@ -424,8 +424,14 @@ a {
   background-color: transparent;
 }
 
+.programs .programsCardWrapper .card .imgDiv {
+  clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
+  border-radius: 20px;
+  position: relative;
+}
+
 .programs .programsCardWrapper .card img {
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 20px;
 }
 
 .programs .programsCardWrapper .card .cardDetails {
@@ -1635,30 +1641,62 @@ body.modal-open {
   max-height: 80vh;
 }
 
-.ctcaSection .cardDetails {
-  bottom: 12px !important;
+/* .heroSection ends here  */
+
+.ctcaSection .cardBg {
+  background: url('./Images/ctcaImg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* padding: 0px; */
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
-.ctcaSection .cardDetails .cardTitle {
-  font-size: 16px !important;
-  font-weight: 500 !important;
+.ctcaSection .diffColorBg {
+  background: url('./Images/ctcaImg1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+   /* padding: 0px; */
+   padding-top: 30px;
+   padding-bottom: 20px;
 }
 
-.ctcaSection .cardDetails .cardDesc {
-  height: max-content !important;
-  font-size: 32px;
+.ctcaSection .card {
+  background-color: transparent;
+  gap: 30px;
+  border: none;
+}
+
+.ctcaSection .imgBgWrapper {
+  position: relative;
+}
+
+.ctcaSection .imgBg {
+  mask: url('./Images/imgShape.svg');
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.ctcaSection .imgBg img {
+  width: 100%;
+  height: 100%;
+}
+
+.ctcaSection .card .cardDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ctcaSection .card .cardTitle {
+  font-weight: 500;
+  color: #fff;
+}
+
+.ctcaSection .card .cardDesc {
+  color: #fff;
   font-weight: 700;
-}
-
-@media screen and (max-width: 575px) {
-
-  .ctcaSection .card .cardDetails {
-    gap: 2px !important;
-  }
-
-  .ctcaSection .cardDetails .cardDesc {
-    font-size: 20px;
-  }
+  font-size: 32px;
 }
 
 /* ctcaSection ends here  */
