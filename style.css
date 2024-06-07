@@ -114,6 +114,7 @@ a {
 .navbar {
   z-index: 2;
   background-color: transparent !important;
+  transition: all 0.3s ease-in-out; 
 }
 
 .navbar .navbarWrapper {
@@ -127,6 +128,12 @@ a {
   padding: 18px;
   border-radius: 8px;
   box-shadow: 0px 8px 32px 0px #29363F14;
+  transition: all 0.3s ease-in-out; 
+}
+
+.companyLogo {
+  width: 170px;
+  height: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -1626,6 +1633,7 @@ body.modal-open {
   .owl-next {
     width: 30px !important;
     height: 30px !important;
+    margin-top: -20px;
   }
 
   .owl-prev {
@@ -1639,6 +1647,7 @@ body.modal-open {
 
 .hero-carousel img {
   max-height: 80vh;
+  object-fit: cover;
 }
 
 /* .heroSection ends here  */
@@ -1656,14 +1665,14 @@ body.modal-open {
   background: url('./Images/ctcaImg1.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-   /* padding: 0px; */
-   padding-top: 30px;
-   padding-bottom: 20px;
+  /* padding: 0px; */
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .ctcaSection .card {
   background-color: transparent;
-  gap: 30px;
+  gap: 20px;
   border: none;
 }
 
@@ -2203,4 +2212,22 @@ section {
   .loadmoreBtnWrapper {
     margin-top: 30px;
   }
+}
+
+.stickyNav {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* Adjust as needed */
+  background-color: white !important;
+  box-shadow: 0px 8px 32px 0px #29363F14;
+  transition: all 0.3s ease-in-out; 
+}
+
+.stickyNavActive {
+  margin-top: 0px !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease-in-out; 
 }
