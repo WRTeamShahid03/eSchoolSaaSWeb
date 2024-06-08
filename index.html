@@ -452,8 +452,8 @@
           </div>
 
           <div class="col-12 mt-5">
-            <div class="row">
-              <div class="col-6 col-md-6 col-lg-3">
+            <div class="row ctcaCardsRow">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="cardBg">
                   <div class="card">
                     <div class="imgBg">
@@ -466,7 +466,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="cardBg diffColorBg">
                   <div class="card">
                     <div class="imgBg">
@@ -479,7 +479,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="cardBg">
                   <div class="card">
                     <div class="imgBg">
@@ -492,7 +492,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-md-6 col-lg-3 ">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3 ">
                 <div class="cardBg diffColorBg">
                   <div class="card">
                     <div class="imgBg">
@@ -1032,7 +1032,7 @@
       // Initialize each carousel separately
       $(".announcementSwiper").each(function () {
         var owl = $(this).owlCarousel({
-          loop: false,
+          loop: true,
           margin: 10,
           nav: false,
           responsive: {
@@ -1069,7 +1069,7 @@
     $(document).ready(function () {
       $(".hero-carousel").owlCarousel({
         items: 1,
-        loop: false,
+        loop: true,
         autoplay: true,
         autoplayTimeout: 2000, // Set autoplay interval in milliseconds
         autoplayHoverPause: true, // Pause autoplay when mouse hovers over the carousel
@@ -1086,7 +1086,7 @@
       // Initialize each carousel separately
       $(".slider-content.owl-carousel").each(function () {
         var owl = $(this).owlCarousel({
-          loop: false,
+          loop: true,
           margin: 10,
           nav: false,
           responsive: {
