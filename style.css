@@ -1670,23 +1670,24 @@ body.modal-open {
   background: url('./Images/ctcaImg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* padding: 0px; */
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 20px;
+  /* padding-top: 30px; */
+  /* padding-bottom: 20px; */
+  padding-top: 8px;
 }
 
 .ctcaSection .diffColorBg {
   background: url('./Images/ctcaImg1.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* padding: 0px; */
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 20px;
+  /* padding-top: 30px; */
+  /* padding-bottom: 20px; */
+  padding-top: 8px;
 }
 
 .ctcaSection .card {
   background-color: transparent;
-  gap: 20px;
   border: none;
 }
 
@@ -1695,7 +1696,7 @@ body.modal-open {
 }
 
 .ctcaSection .imgBg {
-  mask: url('./Images/imgShape.svg');
+  mask: url('./Images/cardShape.svg');
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
 }
