@@ -1125,9 +1125,10 @@
 
     // hero-slider
     $(document).ready(function () {
+      var itemCount = $(".hero-carousel .item").length;
       $(".hero-carousel").owlCarousel({
         items: 1,
-        loop: true,
+        loop: itemCount > 1,
         autoplay: true,
         autoplayTimeout: 2000, // Set autoplay interval in milliseconds
         autoplayHoverPause: true, // Pause autoplay when mouse hovers over the carousel
