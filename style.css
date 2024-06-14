@@ -1334,7 +1334,21 @@ footer .infoDivWrapper .textDiv span:last-child {
 
 .ourTeacher .commonSlider .card img {
   width: 100%;
+  height: 290px;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .ourTeacher .commonSlider .card img {
+    height: 280px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .ourTeacher .commonSlider .card img {
+    height: auto;
+  }
 }
 
 .ourTeacher .commonSlider .card .teacherDetails {
@@ -1548,7 +1562,7 @@ input::-webkit-inner-spin-button {
   /* Black w/ opacity */
 }
 
-.modal-body{
+.modal-body {
   max-height: 520px;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -2338,7 +2352,8 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
   display: block !important;
   visibility: hidden;
 }
