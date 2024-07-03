@@ -442,21 +442,26 @@ a {
 }
 
 .programs .programsCardWrapper .card .imgDiv {
-  clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
+  /* clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%); */
   border-radius: 20px;
   position: relative;
+  overflow: hidden;
 }
 
-.programs .programsCardWrapper .card .imgDiv::after {
+.programs .programsCardWrapper .card .imgDiv::before {
   content: '';
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(#000000ba, #000000ba);
-  opacity: 0.7;
-  border-radius: 20px;
+  height: 100px;
+  background: linear-gradient(#00000036, #000000d9);
+  filter: blur(4px);
+  transition: height 0.3s;
+}
+
+.programs .programsCardWrapper .card:hover .imgDiv::before{
+  height: 150px;
 }
 
 .programs .programsCardWrapper .card img {
@@ -784,7 +789,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 36px;
 }
 
 .navigationBtns .commonBtn {
@@ -1890,26 +1895,28 @@ body.modal-open {
   border-radius: 8px;
 }
 
-.ourGalleryPhotos .upperImg1 img{
+.ourGalleryPhotos .upperImg1 img {
   /* width: 306px; */
   height: 230px;
   object-fit: cover;
   border-radius: 8px;
 }
-.ourGalleryPhotos .upperImg2 img{
+
+.ourGalleryPhotos .upperImg2 img {
   /* width: 306px; */
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-.ourGalleryPhotos .lowerImg1 img{
+.ourGalleryPhotos .lowerImg1 img {
   /* width: 306px; */
   height: 162px;
   object-fit: cover;
   border-radius: 8px;
 }
-.ourGalleryPhotos .lowerImg2 img{
+
+.ourGalleryPhotos .lowerImg2 img {
   /* width: 306px; */
   height: 194px;
   object-fit: cover;
@@ -2091,6 +2098,12 @@ section {
 @media screen and (min-width: 2200px) {
   .commonWaveSect::after {
     height: 164px;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .commonWaveSect::after {
+    height: 180px;
   }
 }
 
