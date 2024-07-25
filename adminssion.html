@@ -202,11 +202,11 @@
                                             <label for="gender">Gender<span>*</span></label>
                                             <div class="row">
                                                 <div class="col-lg-5">
-                                                    <input type="radio">
+                                                    <input type="radio" name="gender" id="male">
                                                     <span>Male</span>
                                                 </div>
                                                 <div class="col-lg-5">
-                                                    <input type="radio">
+                                                    <input type="radio" name="gender" id="female">
                                                     <span>Female</span>
                                                 </div>
                                             </div>
@@ -266,11 +266,11 @@
                                             <label for="gender">Gender<span>*</span></label>
                                             <div class="row">
                                                 <div class="col-lg-5">
-                                                    <input type="radio">
+                                                    <input type="radio" name="parentGender" id="male">
                                                     <span>Male</span>
                                                 </div>
                                                 <div class="col-lg-5">
-                                                    <input type="radio">
+                                                    <input type="radio" name="parentGender" id="female">
                                                     <span>Female</span>
                                                 </div>
                                             </div>
@@ -504,6 +504,48 @@
                 reader.readAsDataURL(file);
             }
         });
+
+        // =================================================================== //
+
+        // studentGender 
+
+        const genderRadios = document.querySelectorAll('input[name="gender"]');
+
+        genderRadios.forEach(radio => {
+            radio.addEventListener('change', function () {
+                // Remove selectedGender class from all parent divs
+                genderRadios.forEach(radio => {
+                    radio.parentElement.classList.remove('selectedGender');
+                });
+
+                // Add selectedGender class to the parent div of the checked radio
+                if (this.checked) {
+                    this.parentElement.classList.add('selectedGender');
+                }
+            });
+        });
+
+        // =================================================================== //
+
+        // parentGender 
+
+        const parentGenderRadios = document.querySelectorAll('input[name="parentGender"]');
+
+        parentGenderRadios.forEach(radio => {
+            radio.addEventListener('change', function () {
+                // Remove selectedGender class from all parent divs
+                parentGenderRadios.forEach(radio => {
+                    radio.parentElement.classList.remove('selectedGender');
+                });
+
+                // Add selectedGender class to the parent div of the checked radio
+                if (this.checked) {
+                    this.parentElement.classList.add('selectedGender');
+                }
+            });
+        });
+
+
     </script>
 
 
