@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eSchool Web</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive .css" />
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- swiper -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body style="background-color: #F2F5F7">
+
+    <header class="navbar">
+        <div class="container">
+            <div class="navbarWrapper">
+                <div class="navLogoWrapper">
+                    <div class="navLogo">
+                        <a href="index.html">
+                            <img src="./Images/Logo.png" alt="" class="companyLogo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="menuListWrapper">
+                    <ul class="listItems">
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="/photos.html">Photos</a>
+                                    </li>
+                                    <hr />
+                                    <li>
+                                        <a class="dropdown-item" href="/videos.html">Videos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/contact-us.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="hamburg">
+                        <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </div>
+                <div class="loginWrapper">
+                    <button class="commonBtn admissionBtn"><a href="/adminssion.html">Admission Open</a></button>
+                    <button class="commonBtn">Login <i class="fa-regular fa-user"></i></button>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <div class="navLogoWrapper">
+                        <div class="navLogo">
+                            <img src="./Images/Logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="listItems">
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="/photos.html">Photos</a>
+                                    </li>
+                                    <hr />
+                                    <li>
+                                        <a class="dropdown-item" href="/videos.html">Videos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/contact-us.html">Contact Us</a>
+                        </li>
+                        <div class="loginWrapper">
+                            <button class="commonBtn admissionBtn"><a href="/adminssion.html">Admission
+                                    Open</a></button>
+                            <button class="commonBtn">Login <i class="fa-regular fa-user"></i></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="breadcrumb">
+            <div class="container">
+                <div class="contentWrapper">
+                    <span class="title">
+                        Admission Form
+                    </span>
+                    <span>
+                        <a href="/" class="home">Home</a>
+                        <span><i class="fa-solid fa-caret-right"></i></span>
+                        <span class="page">Admission Form</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <section class="admissionPage ">
+            <div class="commonMT commonWaveSect">
+                <div class="container">
+                    <div class="row formContainer">
+                        <div class="col-12 mainDiv">
+                            <div class="formHeading">
+                                <span> Student Information </span>
+                            </div>
+                            <div class="row formWapper">
+                                <div class="col-lg-8">
+                                    <div class="row formDiv">
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="firstName">First Name <span>*</span></label>
+                                            <input type="text" placeholder="First Name">
+                                        </div>
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="lastName">Last Name <span>*</span></label>
+                                            <input type="text" placeholder="Last Name">
+                                        </div>
+
+                                        <!-- ====================================================================================== -->
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="dob">Date Of Birth <span>*</span></label>
+                                            <input type="number" placeholder="DOB">
+                                        </div>
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="number">Mobile Number <span>*</span></label>
+                                            <input type="number" placeholder="Mobile Number">
+                                        </div>
+
+                                        <!-- ====================================================================================== -->
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="currentAddress">Current Address <span>*</span></label>
+                                            <input type="text" placeholder="Current Address">
+                                        </div>
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="permanentAddress">Permanent Address <span>*</span></label>
+                                            <input type="text" placeholder="Permanent Address">
+                                        </div>
+
+                                        <!-- ====================================================================================== -->
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="=classMedium">Class and Medium <span>*</span></label>
+                                            <div>
+                                                <select name="classMedium" id="classMedium">
+                                                    <option value="">Choose Class Medium</option>
+                                                    <option value="1st english">1st english</option>
+                                                    <option value="2nd english">2nd english</option>
+                                                    <option value="3rd english">3rd english</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="gender">Gender<span>*</span></label>
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <input type="radio">
+                                                    <span>Male</span>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <input type="radio">
+                                                    <span>Female</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="fileInputWrapper">
+                                        <div>
+                                            <img src="./Images/Image Preview.png" alt="imgPreview"
+                                                class="upperImgPreview">
+                                        </div>
+                                        <div class="file-upload upperFileUpload">
+                                            <div class="file-select">
+                                                <button type="button">Browse...</button>
+                                                <span>No File Selected.</span>
+                                                <input type="file" name="fileUpload" id="fileUpload">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mainDiv">
+                            <div class="formHeading">
+                                <span> Parents Information </span>
+                            </div>
+                            <div class="row formWapper">
+                                <div class="col-lg-8">
+                                    <div class="row formDiv">
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="firstName">First Name <span>*</span></label>
+                                            <input type="text" placeholder="First Name">
+                                        </div>
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="lastName">Last Name <span>*</span></label>
+                                            <input type="text" placeholder="Last Name">
+                                        </div>
+
+                                        <!-- ====================================================================================== -->
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="number">Mobile Number <span>*</span></label>
+                                            <input type="number" placeholder="Mobile Number">
+                                        </div>
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="email">Email<span>*</span></label>
+                                            <input type="email" placeholder="Email">
+                                        </div>
+
+                                        <!-- ====================================================================================== -->
+
+                                        <div class="col-lg-6 inputWrapper">
+                                            <label for="gender">Gender<span>*</span></label>
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <input type="radio">
+                                                    <span>Male</span>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <input type="radio">
+                                                    <span>Female</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="fileInputWrapper">
+                                        <div>
+                                            <img src="./Images/Image Preview.png" alt="imgPreview"
+                                                class="lowerImgPreview">
+                                        </div>
+                                        <div class="file-upload lowerFileUpload">
+                                            <div class="file-select">
+                                                <button type="button">Browse...</button>
+                                                <span>No File Selected.</span>
+                                                <input type="file" name="fileUpload" id="fileUpload">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 formBtnsWrapper">
+                            <button class="commonBtn">Reset</button>
+                            <button class="commonBtn">Submit</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <footer class="">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 infoContainer">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 infoDivWrapper">
+                            <div class="iconDiv">
+                                <span class="iconWrapper"><i class="fa-solid fa-location-dot"></i></span>
+                            </div>
+                            <div class="textDiv">
+                                <span>School Address</span>
+                                <span>55356 Larson Mountain, Thresaville, NV 45331-7457</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 infoDivWrapper">
+                            <div class="iconDiv">
+                                <span class="iconWrapper"><i class="fa-solid fa-envelope-circle-check"></i></span>
+                            </div>
+                            <div class="textDiv">
+                                <span>Mail Us</span>
+                                <span>eSchoolsass@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 infoDivWrapper">
+                            <div class="iconDiv">
+                                <span class="iconWrapper"><i class="fa-solid fa-phone-volume"></i></i></span>
+                            </div>
+                            <div class="textDiv">
+                                <span>Call Us</span>
+                                <span>+91 1234567890</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="companyInfoWrapper">
+                        <div>
+                            <a href="index.html">
+                                <img src="./Images/footerLogo.png" alt="" class="companyLogo" />
+                            </a>
+                        </div>
+                        <div>
+                            <span class="commonDesc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna.
+                            </span>
+                        </div>
+
+                        <div class="socialIcons">
+                            <span>
+                                <a href="https://www.facebook.com/wrteam.in" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.instagram.com/wrteam.in" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://www.linkedin.com/company/wrteam" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="https://twitter.com/wrteamin" target="_blank">
+                                    <i class="fa-brands fa-square-twitter"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="linksWrapper usefulLinksDiv">
+                        <span class="title">Useful Links</span>
+                        <span><a href="/index.html">Home</a></span>
+                        <span><a href="/about-us.html">About Us</a></span>
+                        <span><a href="/photos.html">Photos</a></span>
+                        <span><a href="/videos.html">Videos</a></span>
+                        <span><a href="/contact-us.html">Contact Us</a></span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-2">
+                    <div class="linksWrapper">
+                        <span class="title">Quick Links</span>
+                        <span>
+                            <a href=""> Admin Login </a>
+                        </span>
+                        <span>
+                            <a href=""> Terms & Conditioins </a>
+                        </span>
+                        <span>
+                            <a href=""> Privacy Policy </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="linksWrapper">
+                        <span class="title">Download eSchool Saas Apps</span>
+
+                        <div class="appContainer">
+                            <a class="appWrapper" href="/">
+                                <img src="./Images/PlayStore.png" alt="">
+                                <span class="appNameWrapper">
+                                    <span>Student & Parent</span>
+                                    <span>Android App</span>
+                                </span>
+                            </a>
+
+                            <a class="appWrapper" href="/">
+                                <img src="./Images/AppStore.png" alt="">
+                                <span class="appNameWrapper">
+                                    <span>Student & Parent</span>
+                                    <span>iOS App</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="appContainer mt-4">
+                            <a class="appWrapper" href="/">
+                                <img src="./Images/AppStore.png" alt="">
+                                <span class="appNameWrapper">
+                                    <span>Staff & Teacher</span>
+                                    <span>iOS App</span>
+                                </span>
+                            </a>
+
+                            <a class="appWrapper" href="/">
+                                <img src="./Images/PlayStore.png" alt="">
+                                <span class="appNameWrapper">
+                                    <span>Staff & Teacher</span>
+                                    <span>Android App</span>
+                                </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRightText">
+            <span>© 2024 © WRTeam. All Rights Reserved</span>
+        </div>
+    </footer>
+
+    <!-- for file select  -->
+    <script>
+
+        // upperFileUpload
+
+        document.querySelector('.upperFileUpload button').addEventListener('click', function () {
+            document.querySelector('.upperFileUpload input[type="file"]').click();
+        });
+
+        document.querySelector('.upperFileUpload input[type="file"]').addEventListener('change', function () {
+            var file = this.files[0];
+            var fileName = file ? file.name : 'No File Selected.';
+            document.querySelector('.upperFileUpload span').textContent = fileName;
+
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.querySelector('.upperImgPreview').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // ====================================================== //
+
+        // lowerFileUpload
+
+        document.querySelector('.lowerFileUpload button').addEventListener('click', function () {
+            document.querySelector('.lowerFileUpload input[type="file"]').click();
+        });
+
+        document.querySelector('.lowerFileUpload input[type="file"]').addEventListener('change', function () {
+            var file = this.files[0];
+            var fileName = file ? file.name : 'No File Selected.';
+            document.querySelector('.lowerFileUpload span').textContent = fileName;
+
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.querySelector('.lowerImgPreview').src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+
+    <!-- bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawesome icons   -->
+    <script src="https://kit.fontawesome.com/1d2a297b20.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

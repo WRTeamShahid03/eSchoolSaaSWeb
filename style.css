@@ -230,6 +230,17 @@ a {
   font-size: 16px;
 }
 
+.navbar .loginWrapper .admissionBtn {
+  background-color: var(--secondary-color2);
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 516px) {
+  .navbar .loginWrapper .admissionBtn {
+    margin-bottom: 20px;
+  }
+}
+
 .offcanvas {
   width: 70% !important;
 }
@@ -286,7 +297,7 @@ a {
 }
 
 .heroSection .owl-nav button:hover {
-  background-color: var(--secondary-color1) !important;
+  background-color: var(--secondary-color2) !important;
   color: white !important;
 }
 
@@ -460,7 +471,7 @@ a {
   transition: height 0.3s;
 }
 
-.programs .programsCardWrapper .card:hover .imgDiv::before{
+.programs .programsCardWrapper .card:hover .imgDiv::before {
   height: 150px;
 }
 
@@ -2409,4 +2420,190 @@ section {
 .owl-carousel .owl-nav.disabled {
   display: block !important;
   visibility: hidden;
+}
+
+
+/* admission page starts here  */
+
+.admissionPage .formContainer {
+  border: 1px solid #A5B7C4;
+  border-radius: 4px;
+  gap: 50px 0px;
+}
+
+.admissionPage .formContainer .mainDiv {
+  padding: 0px;
+}
+
+.admissionPage .formContainer .formHeading {
+  background-color: #F2F5F7;
+  width: 100%;
+  padding: 16px 30px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
+.admissionPage .formContainer .formHeading {
+  color: #29363F;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.admissionPage .formContainer .formWapper {
+  padding: 16px 30px;
+}
+
+.admissionPage .formContainer .formDiv {
+  gap: 30px 0px;
+}
+
+.admissionPage .formContainer .formWapper .inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.admissionPage .formContainer .formWapper .inputWrapper label {
+  font-weight: 500;
+}
+
+
+.admissionPage .formContainer .formWapper .inputWrapper label span {
+  color: #DB3D26;
+}
+
+.admissionPage .formContainer .formWapper .inputWrapper input,
+.admissionPage .formContainer .formWapper .inputWrapper div {
+  padding: 8px 16px;
+  border: 1px solid #A5B7C4;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.admissionPage .formContainer .formWapper .inputWrapper .row {
+  border: none;
+  padding: 0px 16px;
+  justify-content: space-between;
+}
+
+.admissionPage .formContainer .formWapper .inputWrapper .row div span {
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.admissionPage .formContainer .formWapper .inputWrapper select {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #5C788C;
+}
+
+.admissionPage .formContainer .formWapper .inputWrapper select:focus {
+  outline: none;
+}
+
+
+.admissionPage .formContainer .formWapper .inputWrapper input::placeholder {
+  color: #5C788C;
+}
+
+.admissionPage .formBtnsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  border-top: 1px solid #A5B7C4;
+  padding: 30px;
+}
+
+.admissionPage .formBtnsWrapper button:first-child {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.admissionPage .fileInputWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.admissionPage .file-upload {
+  display: inline-block;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.admissionPage .file-upload input[type="file"] {
+  display: none;
+}
+
+.admissionPage .file-upload .file-select {
+  display: flex;
+  align-items: center;
+  border: 1px solid #A5B7C4;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+
+.admissionPage .file-upload .file-select button {
+  flex: 1;
+  border: none;
+  background-color: #D8E0E6;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  cursor: pointer;
+  color: #3A4C59;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 4px 0px 0px 4px;
+  font-family: ubuntu;
+}
+
+.admissionPage .file-upload .file-select span {
+  flex: 3;
+  padding-left: 10px;
+  color: #5C788C;
+  font-size: 14px;
+}
+
+.admissionPage .upperImgPreview {
+  width: 100%;
+  height: 332px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.admissionPage .lowerImgPreview {
+  width: 100%;
+  height: 222px;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.admissionPage .row,
+.admissionPage .fileInputWrapper {
+  gap: 30px 0px;
+}
+
+
+@media screen and (min-width: 2000px) {
+  .admissionPage {
+    margin-top: 130px;
+  }
+
+  .admissionPage .commonWaveSect::before {
+    content: '';
+    position: absolute;
+    top: -114px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .admissionPage .formContainer {
+    margin: auto;
+  }
 }
