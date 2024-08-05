@@ -233,6 +233,11 @@ a {
 .navbar .loginWrapper .admissionBtn {
   background-color: var(--secondary-color2);
   margin-right: 12px;
+  transition: all 0.3s;
+}
+
+.navbar .loginWrapper .admissionBtn:hover{
+  background-color: var(--primary-hover-color);
 }
 
 @media screen and (max-width: 516px) {
@@ -2660,6 +2665,11 @@ section {
 .admissionOpenSect .flex_column_center .commonBtn {
   background-color: transparent;
   border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.admissionOpenSect .flex_column_center .commonBtn:hover{
+  background-color: var(--primary-hover-color);
 }
 
 .admissionOpenSect .imgDiv {

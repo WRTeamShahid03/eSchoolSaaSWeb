@@ -463,6 +463,18 @@
     <!-- for file select  -->
     <script>
 
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header.navbar');
+            const navbar = document.querySelector('.navbarWrapper');
+            if (window.scrollY > 0) {
+                header.classList.add('stickyNav');
+                navbar.classList.add('stickyNavActive');
+            } else {
+                header.classList.remove('stickyNav');
+                navbar.classList.remove('stickyNavActive');
+            }
+        });
+
         // upperFileUpload
 
         document.querySelector('.upperFileUpload button').addEventListener('click', function () {
