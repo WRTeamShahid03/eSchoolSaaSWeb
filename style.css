@@ -2487,6 +2487,13 @@ section {
   background-color: transparent;
 }
 
+.admissionPage .formContainer .formWapper .inputWrapper input:focus {
+  border: 1.5px solid var(--primary-color) !important;
+  background-color: #f2f5f7 !important;
+  color: var(--primary-color);
+  outline: none;
+}
+
 .admissionPage .formContainer .formWapper .inputWrapper input[type="date"].invalid {
   color: #5C788C;
 }
