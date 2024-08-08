@@ -66,7 +66,15 @@
                     </div>
                 </div>
                 <div class="loginWrapper">
-                    <button class="commonBtn admissionBtn"><a href="/adminssion.html">Admission Open</a></button>
+                    <button class="commonBtn admissionBtn">
+                        <div class="default-btn">
+                            <a href="/adminssion.html">Admission Open</a>
+                        </div>
+                        <div class="hover-btn">
+                            <a href="/adminssion.html">Apply Now</a>
+                        </div>
+                    </button>
+                    <!-- <button class="commonBtn admissionBtn"><a href="/adminssion.html">Admission Open</a></button> -->
                     <button class="commonBtn">Login <i class="fa-regular fa-user"></i></button>
                 </div>
             </div>
@@ -112,8 +120,15 @@
                             <a href="/contact-us.html">Contact Us</a>
                         </li>
                         <div class="loginWrapper">
-                            <button class="commonBtn admissionBtn"><a href="/adminssion.html">Admission
-                                    Open</a></button>
+                            <button class="commonBtn admissionBtn">
+                                <div class="default-btn">
+                                    <a href="/adminssion.html">Admission Open</a>
+                                </div>
+                                <div class="hover-btn">
+                                    <a href="/adminssion.html">Apply Now</a>
+                                </div>
+                            </button>
+                            <!-- <button class="commonBtn admissionBtn"><a href="/adminssion.html">Admission Open</a></button> -->
                             <button class="commonBtn">Login <i class="fa-regular fa-user"></i></button>
                         </div>
                     </ul>
@@ -164,7 +179,7 @@
 
                                         <div class="col-lg-6 inputWrapper">
                                             <label for="dob">Date Of Birth <span>*</span></label>
-                                            <input type="number" placeholder="DOB">
+                                            <input type="date" id="dob" class="invalid" placeholder="DOB">
                                         </div>
 
                                         <div class="col-lg-6 inputWrapper">
@@ -190,7 +205,7 @@
                                             <label for="=classMedium">Class and Medium <span>*</span></label>
                                             <div>
                                                 <select name="classMedium" id="classMedium">
-                                                    <option value="">Choose Class Medium</option>
+                                                    <option value="1">Choose Class Medium</option>
                                                     <option value="1st english">1st english</option>
                                                     <option value="2nd english">2nd english</option>
                                                     <option value="3rd english">3rd english</option>
@@ -556,6 +571,43 @@
                 }
             });
         });
+
+          // ==================================================================================
+
+
+        // date input 
+        const dobInput = document.getElementById('dob');
+
+        dobInput.addEventListener('change', function () {
+            if (!this.value) {
+                this.classList.add('invalid');
+            } else {
+                this.classList.remove('invalid');
+            }
+        });
+
+        // ==================================================================================
+
+        // for select 
+
+        const classMediumSelect = document.getElementById('classMedium');
+
+        classMediumSelect.addEventListener('change', function () {
+            if (this.value === '1') {
+                this.classList.add('invalid');
+                this.classList.remove('valid');
+            } else {
+                this.classList.remove('invalid');
+                this.classList.add('valid');
+            }
+        });
+
+        // Initial check
+        if (classMediumSelect.value === '1') {
+            classMediumSelect.classList.add('invalid');
+        } else {
+            classMediumSelect.classList.add('valid');
+        }
 
 
     </script>
